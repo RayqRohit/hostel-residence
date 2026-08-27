@@ -771,6 +771,191 @@
         </div>
     </section>
 
+    <section class="hostel-security-section">
+        <div class="container">
+            <h2 class="hostel-security-title">Freedom and security, <span class="hostel-security-highlight">intact</span></h2>
+            <p class="hostel-security-subtitle">Every hostel block sits inside the 250 acre campus, so the same security layer covers your walk to class and your walk back at night.</p>
+            
+            <div class="hostel-security-slider-container">
+                <div class="hostel-security-slider">
+                    <!-- Slide 1 -->
+                    <div class="hostel-security-card">
+                        <div class="hostel-security-card-inner">
+                            <h3 class="hostel-security-highlight">On time notifications to parents</h3>
+                            <p>Real time gate pass alerts help parents stay informed without constant check ins.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="hostel-security-card">
+                        <div class="hostel-security-card-inner">
+                            <h3 class="hostel-security-highlight">Eyes on campus</h3>
+                            <p>24x7 CCTV coverage keeps the hostels and the wider campus protected around the clock.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="hostel-security-card">
+                        <div class="hostel-security-card-inner">
+                            <h3 class="hostel-security-highlight">Security that never sleeps</h3>
+                            <p>A trained security team is on duty at all hours, so you can focus on living your best campus life.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="hostel-security-card">
+                        <div class="hostel-security-card-inner">
+                            <h3 class="hostel-security-highlight">Hospital on campus</h3>
+                            <p>A 750 bed multi speciality hospital operates on the same campus, so emergency care is minutes away, not a drive away.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hostel-security-slider-controls">
+                    <div class="hostel-security-slider-progress">
+                        <div class="hostel-security-slider-progress-bar"></div>
+                    </div>
+                    <div class="hostel-security-slider-nav">
+                        <button class="hostel-security-slider-prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="hostel-security-slider-next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hostel-booking-section">
+        <div class="container">
+            <div class="text-center hostel-booking-header">
+                <h2>How to book a <span class="text-purple">hostel room</span></h2>
+                <p>Four steps, and you can be holding a room the same day. Order matters, because rooms go in the sequence bookings arrive.</p>
+            </div>
+
+            <div class="hostel-booking-timeline-wrapper">
+                <div class="hostel-booking-timeline-line">
+                    <div class="hostel-booking-timeline-progress" id="booking-timeline-progress"></div>
+                </div>
+                <ul class="nav nav-pills hostel-booking-tabs" id="booking-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="booking-step1-tab" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#booking-step1" data-target="#booking-step1" type="button" role="tab" aria-controls="booking-step1" aria-selected="true" onclick="updateBookingProgress(0)">
+                            <div class="booking-tab-icon">
+                                <img src="assets/images/hostel-room-booking/hostel-room-booking-admission.svg" alt="Confirm admission">
+                            </div>
+                            <span class="booking-tab-text">Confirm your admission</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="booking-step2-tab" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#booking-step2" data-target="#booking-step2" type="button" role="tab" aria-controls="booking-step2" aria-selected="false" onclick="updateBookingProgress(33)">
+                            <div class="booking-tab-icon">
+                                <img src="assets/images/hostel-room-booking/hostel-room-booking-room-selection.svg" alt="Pick your room">
+                            </div>
+                            <span class="booking-tab-text">Pick your room</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="booking-step3-tab" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#booking-step3" data-target="#booking-step3" type="button" role="tab" aria-controls="booking-step3" aria-selected="false" onclick="updateBookingProgress(66)">
+                            <div class="booking-tab-icon">
+                                <img src="assets/images/hostel-room-booking/hostel-room-booking-payment.svg" alt="Pay 50% and book">
+                            </div>
+                            <span class="booking-tab-text">Pay 50% and book</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="booking-step4-tab" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#booking-step4" data-target="#booking-step4" type="button" role="tab" aria-controls="booking-step4" aria-selected="false" onclick="updateBookingProgress(100)">
+                            <div class="booking-tab-icon">
+                                <img src="assets/images/hostel-room-booking/hostel-room-booking-allotment.svg" alt="Get your allotment">
+                            </div>
+                            <span class="booking-tab-text">Get your allotment</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content hostel-booking-content" id="booking-tabs-content">
+                <!-- Step 1 -->
+                <div class="tab-pane fade show active" id="booking-step1" role="tabpanel" aria-labelledby="booking-step1-tab">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="booking-card-dark">
+                                <span class="step-label">STEP 1</span>
+                                <h3>Confirm your admission</h3>
+                                <p>Finish your programme admission first. Hostel booking opens only after that.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="booking-card-light">
+                                <h4>What's next</h4>
+                                <p>AC or not, attached or common washroom, how many people you want to share with.</p>
+                                <button class="btn btn-next-step" onclick="goToNextBookingStep(1)">Next Step</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="tab-pane fade" id="booking-step2" role="tabpanel" aria-labelledby="booking-step2-tab">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="booking-card-dark">
+                                <span class="step-label">STEP 2</span>
+                                <h3>Pick your room</h3>
+                                <p>AC or not, attached or common washroom, how many people you want to share with.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="booking-card-light">
+                                <h4>What's next</h4>
+                                <p>Secure your room by paying 50% of the annual hostel fee.</p>
+                                <button class="btn btn-next-step" onclick="goToNextBookingStep(2)">Next Step</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="tab-pane fade" id="booking-step3" role="tabpanel" aria-labelledby="booking-step3-tab">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="booking-card-dark">
+                                <span class="step-label">STEP 3</span>
+                                <h3>Pay 50% and book</h3>
+                                <p>Secure your room by paying 50% of the annual hostel fee.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="booking-card-light">
+                                <h4>What's next</h4>
+                                <p>Check your student portal for your room allotment letter and reporting dates.</p>
+                                <button class="btn btn-next-step" onclick="goToNextBookingStep(3)">Next Step</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="tab-pane fade" id="booking-step4" role="tabpanel" aria-labelledby="booking-step4-tab">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="booking-card-dark">
+                                <span class="step-label">STEP 4</span>
+                                <h3>Get your allotment</h3>
+                                <p>Check your student portal for your room allotment letter and reporting dates.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="booking-card-light">
+                                <h4>What's next</h4>
+                                <p>You're all set! We look forward to welcoming you to the hostel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
