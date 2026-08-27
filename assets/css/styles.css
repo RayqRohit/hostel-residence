@@ -1,0 +1,1027 @@
+@font-face {
+    font-family: 'Figtree-Regular';
+    src: url('../fonts/Figtree-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Figtree-Medium';
+    src: url('../fonts/Figtree-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Figtree-SemiBold';
+    src: url('../fonts/Figtree-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Figtree-Bold';
+    src: url('../fonts/Figtree-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Polymath Display Regular';
+    src: url('../fonts/Polymath Display Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Polymath Display Medium';
+    src: url('../fonts/Polymath Display Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Polymath Display Semibold';
+    src: url('../fonts/Polymath Display Semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Polymath Display Bold';
+    src: url('../fonts/Polymath Display Bold.ttf') format('truetype');
+}
+
+:root {
+    --font-figtree-regular: 'Figtree-Regular', sans-serif;
+    --font-figtree-medium: 'Figtree-Medium', sans-serif;
+    --font-figtree-semibold: 'Figtree-SemiBold', sans-serif;
+    --font-figtree-bold: 'Figtree-Bold', sans-serif;
+
+    --font-polymath-regular: 'Polymath Display Regular', sans-serif;
+    --font-polymath-medium: 'Polymath Display Medium', sans-serif;
+    --font-polymath-semibold: 'Polymath Display Semibold', sans-serif;
+    --font-polymath-bold: 'Polymath Display Bold', sans-serif;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Hostel Residence Hero Section */
+.hostel-residence-hero {
+    background-image: url('../images/hostel-residence-hero/hostel-residence-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 8px solid #4e36f5;
+}
+
+.hostel-residence-badge {
+    display: inline-block;
+    background-color: #1b1142;
+    color: #ffffff;
+    font-family: var(--font-figtree-semibold);
+    font-size: 14px;
+    padding: 8px 24px;
+    border-radius: 30px;
+    margin-bottom: 24px;
+}
+
+.hostel-residence-title {
+    font-family: var(--font-polymath-bold);
+    font-size: 64px;
+    line-height: 1.1;
+    color: #1b1142;
+    margin-bottom: 24px;
+}
+
+.hostel-residence-highlight {
+    color: #8c3a9f;
+}
+
+.hostel-residence-desc {
+    font-family: var(--font-figtree-regular);
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 40px;
+    max-width: 95%;
+}
+
+.hostel-residence-desc strong {
+    font-family: var(--font-figtree-bold);
+    color: #1b1142;
+}
+
+.hostel-residence-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hostel-residence-btn-primary {
+    background-color: #ffc800;
+    color: #1b1142;
+    font-family: var(--font-figtree-bold);
+    font-size: 16px;
+    padding: 12px 32px;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.hostel-residence-btn-primary:hover {
+    background-color: #e6b400;
+    color: #1b1142;
+}
+
+.hostel-residence-btn-outline {
+    background-color: transparent;
+    color: #1b1142;
+    font-family: var(--font-figtree-bold);
+    font-size: 16px;
+    padding: 12px 32px;
+    border-radius: 30px;
+    border: 2px solid #1b1142;
+    transition: all 0.3s ease;
+}
+
+.hostel-residence-btn-outline:hover {
+    background-color: #f8f9fa;
+    color: #1b1142;
+}
+
+.hostel-residence-hero-image {
+    text-align: right;
+    position: relative;
+    z-index: 1;
+}
+
+.hostel-residence-hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: scale(1.05);
+    transform-origin: right center;
+}
+
+
+
+/* Stats Section */
+.hostel-residence-stats-section {
+    background-color: #0e0433;
+    padding: 45px 0;
+}
+
+.hostel-residence-stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hostel-residence-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hostel-residence-stat-number {
+    font-family: var(--font-polymath-bold);
+    font-size: 55px;
+    color: #ffd000;
+    line-height: 1;
+}
+
+.hostel-residence-stat-text {
+    font-family: var(--font-figtree-regular);
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.hostel-residence-stat-divider {
+    width: 11px;
+    height: 11px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+/* Filters Section */
+.hostel-residence-filters-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.hostel-residence-filters-title {
+    font-family: var(--font-polymath-bold);
+    font-size: 56px;
+    color: #1b1142;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hostel-residence-filters-highlight {
+    color: #9c3f97;
+}
+
+.hostel-residence-filters-desc {
+    font-family: var(--font-figtree-regular);
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.hostel-residence-filter-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.hostel-residence-filter-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.hostel-residence-filter-header h3 {
+    font-family: var(--font-polymath-bold);
+    font-size: 28px;
+    color: #1b1142;
+    margin: 0;
+}
+
+.hostel-residence-filter-category {
+    font-family: var(--font-polymath-bold);
+    font-size: 18px;
+    color: #1b1142;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Custom Radio */
+.hostel-residence-radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #333333;
+}
+
+.hostel-residence-radio input {
+    display: none;
+}
+
+.hostel-residence-radio-mark {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    display: inline-block;
+    position: relative;
+}
+
+.hostel-residence-radio input:checked+.hostel-residence-radio-mark {
+    border-color: #1b1142;
+    background-color: #1b1142;
+}
+
+.hostel-residence-radio input:checked+.hostel-residence-radio-mark::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hostel-residence-filter-divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 30px 0;
+}
+
+.hostel-residence-budget-section {
+    margin-bottom: 20px;
+}
+
+.hostel-residence-budget-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #1b1142;
+    margin-bottom: 20px;
+}
+
+.hostel-residence-budget-chart-container {
+    position: relative;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.hostel-residence-budget-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    height: 100px;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.hostel-residence-bar {
+    flex: 1;
+    background: linear-gradient(to bottom, #a593fb, #e5deff);
+    border-radius: 6px 6px 0 0;
+}
+
+.hostel-residence-budget-slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hostel-residence-budget-slider .slider-track {
+    width: 100%;
+    height: 4px;
+    background-color: #1b1142;
+    border-radius: 2px;
+}
+
+.hostel-residence-budget-slider .slider-handle {
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border: 2px solid #1b1142;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.hostel-residence-budget-slider .slider-handle.left {
+    left: 5%;
+}
+
+.hostel-residence-budget-slider .slider-handle.right {
+    right: 5%;
+}
+
+.hostel-residence-budget-labels {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-figtree-regular);
+    font-size: 14px;
+    color: #555555;
+    margin-top: -10px;
+}
+
+.hostel-residence-filter-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Custom Checkbox */
+.hostel-residence-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+}
+
+.hostel-residence-checkbox input {
+    display: none;
+}
+
+.hostel-residence-checkbox-mark {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 2px solid #1b1142;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.hostel-residence-checkbox input:checked+.hostel-residence-checkbox-mark {
+    background-color: #1b1142;
+}
+
+.hostel-residence-checkbox input:checked+.hostel-residence-checkbox-mark::after {
+    content: '';
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+}
+
+.hostel-residence-clear-filters {
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #555555;
+    text-decoration: none;
+}
+
+/* Room Cards */
+.hostel-residence-room-card {
+    background-color: #ffffff;
+    border: 1px solid #8c8c8c;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hostel-residence-room-img-wrapper {
+    position: relative;
+}
+
+.hostel-residence-room-img-wrapper img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.hostel-residence-badge-yellow {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ffc800;
+    color: #1b1142;
+    font-family: var(--font-figtree-bold);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.hostel-residence-compare {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-figtree-bold);
+    font-size: 12px;
+    color: #1b1142;
+    cursor: pointer;
+    margin: 0;
+}
+
+.hostel-residence-compare input {
+    display: none;
+}
+
+.hostel-residence-compare .compare-mark {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #1b1142;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hostel-residence-compare input:checked+.compare-mark {
+    background-color: #1b1142;
+}
+
+.hostel-residence-compare input:checked+.compare-mark::after {
+    content: '';
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+}
+
+.hostel-residence-room-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hostel-residence-room-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.hostel-residence-tag-light {
+    background-color: #f7ebf7;
+    color: #1b1142;
+    font-family: var(--font-figtree-bold);
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.hostel-residence-tag-dark {
+    background-color: #1b1142;
+    color: #ffffff;
+    font-family: var(--font-figtree-bold);
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.hostel-residence-room-title {
+    font-family: var(--font-polymath-bold);
+    font-size: 24px;
+    color: #1b1142;
+    margin-bottom: 8px;
+}
+
+.hostel-residence-room-info {
+    font-family: var(--font-figtree-bold);
+    font-size: 14px;
+    color: #1b1142;
+    margin-bottom: 16px;
+}
+
+.hostel-residence-room-price {
+    margin-bottom: 24px;
+}
+
+.hostel-residence-room-price strong {
+    font-family: var(--font-polymath-bold);
+    font-size: 24px;
+    color: #1b1142;
+}
+
+.hostel-residence-room-price span {
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #555555;
+}
+
+.hostel-residence-room-btn-outline {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #1b1142;
+    color: #1b1142;
+    font-family: var(--font-figtree-bold);
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: auto;
+    transition: all 0.2s;
+}
+
+.hostel-residence-room-btn-outline:hover {
+    background-color: #f8f9fa;
+    color: #1b1142;
+}
+
+.hostel-residence-room-btn-solid {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #1b1142;
+    color: #ffffff;
+    font-family: var(--font-figtree-bold);
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: auto;
+    transition: all 0.2s;
+    border: 1px solid #1b1142;
+}
+
+.hostel-residence-room-btn-solid:hover {
+    background-color: #100a2b;
+    color: #ffffff;
+}
+
+.hostel-residence-load-more {
+    display: inline-block;
+    background-color: #ffc800;
+    color: #1b1142;
+    font-family: var(--font-figtree-bold);
+    font-size: 18px;
+    padding: 16px 40px;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.hostel-residence-load-more:hover {
+    background-color: #e6b400;
+    color: #1b1142;
+}
+
+/* Amenities Section */
+.hostel-residence-amenities-section {
+    background-color: #0f0445;
+    padding: 80px 0;
+    color: #ffffff;
+}
+
+.hostel-residence-amenities-title {
+    font-family: var(--font-polymath-regular);
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.hostel-residence-amenities-title strong {
+    font-family: var(--font-polymath-bold);
+    font-size: 56px;
+    display: block;
+}
+
+.hostel-residence-amenities-highlight {
+    color: #ffc800;
+}
+
+.hostel-residence-amenities-desc {
+    font-family: var(--font-figtree-regular);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 95%;
+    color: #e0e0e0;
+}
+
+.hostel-residence-amenities-tabs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.hostel-residence-amenities-tabs .btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-family: var(--font-figtree-semibold);
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.hostel-residence-amenities-tabs .btn.active,
+.hostel-residence-amenities-tabs .btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
+}
+
+.hostel-residence-amenities-subtitle {
+    font-family: var(--font-polymath-bold);
+    font-size: 32px;
+    color: #ffc800;
+    margin-bottom: 16px;
+}
+
+.hostel-residence-amenities-subdesc {
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+}
+
+/* Slider */
+.hostel-residence-amenities-slider {
+    margin-bottom: 30px;
+}
+
+.hostel-residence-amenity-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 10px;
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hostel-residence-amenity-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #1a329e;
+}
+
+.hostel-residence-amenity-content {
+    padding: 24px;
+    background-color: #ffffff;
+    color: #1b1142;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hostel-residence-amenity-content h4 {
+    font-family: var(--font-polymath-bold);
+    font-size: 22px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.hostel-residence-amenity-content p {
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Slick adjustments */
+.hostel-residence-amenities-slider .slick-track {
+    display: flex;
+}
+
+.hostel-residence-amenities-slider .slick-slide {
+    height: inherit !important;
+    display: flex;
+}
+
+.hostel-residence-amenities-slider .slick-slide>div {
+    display: flex;
+    flex: 1;
+}
+
+.hostel-residence-slider-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.hostel-residence-slider-progress {
+    flex-grow: 1;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 30px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.hostel-residence-slider-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    background-color: #ffc800;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.hostel-residence-slider-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.hostel-residence-slider-nav button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.hostel-residence-slider-nav button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hostel-residence-slider-nav button.slick-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Feature Card */
+.hostel-residence-feature-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 30px;
+    background-color: #241170;
+}
+
+.hostel-residence-feature-left {
+    padding-right: 30px;
+}
+
+.hostel-residence-feature-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+    font-family: var(--font-figtree-regular);
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.hostel-residence-feature-left h3 {
+    font-family: var(--font-polymath-bold);
+    font-size: 32px;
+    color: #ffc800;
+    margin-bottom: 20px;
+}
+
+.hostel-residence-feature-left p {
+    font-family: var(--font-figtree-regular);
+    font-size: 17px;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.hostel-residence-feature-list-card {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hostel-residence-feature-list-badge {
+    position: absolute;
+    top: -16px;
+    left: 20px;
+    background-color: #ffc800;
+    color: #1b1142;
+    font-family: var(--font-figtree-bold);
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+
+.hostel-residence-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hostel-residence-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #e0e0e0;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hostel-residence-feature-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.hostel-residence-feature-list li svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.hostel-residence-amenities-note {
+    font-family: var(--font-figtree-regular);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+.hostel-residence-amenities-note strong {
+    font-family: var(--font-figtree-bold);
+}
+
+/* Global Living Experience Section */
+.global-living-experience-section {
+    background-color: #f5f5f7;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.global-living-title {
+    font-family: var(--font-polymath-bold);
+    font-size: 56px;
+    color: #1b1142;
+    margin-bottom: 20px;
+}
+
+.global-living-subtitle {
+    font-family: var(--font-figtree-regular);
+    font-size: 18px;
+    color: #333333;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.global-living-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.global-living-tab {
+    background-color: #1b1142;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-family: var(--font-figtree-semibold);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.global-living-tab:hover,
+.global-living-tab.active {
+    background-color: #2b1d62;
+}
+
+.global-living-scroller-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.global-living-row {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.global-living-track {
+    display: flex;
+    gap: 20px;
+}
+
+.global-living-row.left-scroll .global-living-track {
+    animation: scrollLeft 40s linear infinite;
+}
+
+.global-living-row.right-scroll .global-living-track {
+    animation: scrollRight 40s linear infinite;
+    transform: translateX(-50%);
+}
+
+.global-living-track img {
+    height: 300px;
+    width: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+@keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
