@@ -966,21 +966,40 @@ img {
     flex-wrap: wrap;
 }
 
-.global-living-tab {
-    background-color: #1b1142;
-    color: #ffffff;
+.global-living-tab,
+.nav-pills .nav-link.global-living-tab,
+.nav-pills .nav-link.global-living-tab.active,
+.nav-pills .show > .nav-link.global-living-tab {
+    background-color: #1b1142 !important;
+    color: #ffffff !important;
     border: none;
     padding: 12px 24px;
     border-radius: 30px;
     font-family: var(--font-figtree-semibold);
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
 }
 
-.global-living-tab:hover,
-.global-living-tab.active {
-    background-color: #2b1d62;
+.global-living-tab:hover {
+    opacity: 0.8;
+}
+
+.global-living-tab-icon {
+    width: 0;
+    height: 20px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-left: 0;
+}
+
+.global-living-tab.active .global-living-tab-icon {
+    width: 20px;
+    opacity: 1;
+    margin-left: 8px;
 }
 
 .global-living-scroller-container {

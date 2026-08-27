@@ -599,49 +599,173 @@
             <h2 class="global-living-title">A global living experience</h2>
             <p class="global-living-subtitle">The university celebrates India's diversity by marking festivals from across regions, communities and traditions - observed as participation, the way the year unfolds.</p>
             
-            <div class="global-living-tabs">
-                <button class="global-living-tab active">6,000+ international students</button>
-                <button class="global-living-tab">75+ countries</button>
-                <button class="global-living-tab">Cultural exchange programmes</button>
-                <button class="global-living-tab">Round the clock support</button>
+            <div class="global-living-tabs nav nav-pills" id="global-living-tab" role="tablist">
+                <button class="global-living-tab nav-link active" id="gl-tab-1" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#gl-pane-1" data-target="#gl-pane-1" type="button" role="tab" aria-controls="gl-pane-1" aria-selected="true">
+                    6,000+ international students
+                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg" class="global-living-tab-icon" alt="">
+                </button>
+                <button class="global-living-tab nav-link" id="gl-tab-2" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#gl-pane-2" data-target="#gl-pane-2" type="button" role="tab" aria-controls="gl-pane-2" aria-selected="false">
+                    75+ countries
+                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg" class="global-living-tab-icon" alt="">
+                </button>
+                <button class="global-living-tab nav-link" id="gl-tab-3" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#gl-pane-3" data-target="#gl-pane-3" type="button" role="tab" aria-controls="gl-pane-3" aria-selected="false">
+                    Cultural exchange programmes
+                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg" class="global-living-tab-icon" alt="">
+                </button>
+                <button class="global-living-tab nav-link" id="gl-tab-4" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#gl-pane-4" data-target="#gl-pane-4" type="button" role="tab" aria-controls="gl-pane-4" aria-selected="false">
+                    Round the clock support
+                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg" class="global-living-tab-icon" alt="">
+                </button>
             </div>
         </div>
         
-        <div class="global-living-scroller-container">
-            <!-- Row 1: left scroll -->
-            <div class="global-living-row left-scroll">
-                <div class="global-living-track">
-                    <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                    <!-- Duplicate for infinite scroll -->
-                    <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+        <div class="tab-content" id="global-living-tabContent">
+            <!-- Pane 1 -->
+            <div class="tab-pane fade show active" id="gl-pane-1" role="tabpanel" aria-labelledby="gl-tab-1">
+                <div class="global-living-scroller-container">
+                    <div class="global-living-row left-scroll">
+                        <div class="global-living-track">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                        </div>
+                    </div>
+                    <div class="global-living-row right-scroll">
+                        <div class="global-living-track">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Row 2: right scroll -->
-            <div class="global-living-row right-scroll">
-                <div class="global-living-track">
-                    <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                    <!-- Duplicate for infinite scroll -->
-                    <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                    <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+            <!-- Pane 2 -->
+            <div class="tab-pane fade" id="gl-pane-2" role="tabpanel" aria-labelledby="gl-tab-2">
+                <div class="global-living-scroller-container">
+                    <div class="global-living-row left-scroll">
+                        <div class="global-living-track">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                        </div>
+                    </div>
+                    <div class="global-living-row right-scroll">
+                        <div class="global-living-track">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pane 3 -->
+            <div class="tab-pane fade" id="gl-pane-3" role="tabpanel" aria-labelledby="gl-tab-3">
+                <div class="global-living-scroller-container">
+                    <div class="global-living-row left-scroll">
+                        <div class="global-living-track">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                        </div>
+                    </div>
+                    <div class="global-living-row right-scroll">
+                        <div class="global-living-track">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pane 4 -->
+            <div class="tab-pane fade" id="gl-pane-4" role="tabpanel" aria-labelledby="gl-tab-4">
+                <div class="global-living-scroller-container">
+                    <div class="global-living-row left-scroll">
+                        <div class="global-living-track">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                        </div>
+                    </div>
+                    <div class="global-living-row right-scroll">
+                        <div class="global-living-track">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
