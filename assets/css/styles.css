@@ -969,7 +969,7 @@ img {
 .global-living-tab,
 .nav-pills .nav-link.global-living-tab,
 .nav-pills .nav-link.global-living-tab.active,
-.nav-pills .show > .nav-link.global-living-tab {
+.nav-pills .show>.nav-link.global-living-tab {
     background-color: #1b1142 !important;
     color: #ffffff !important;
     border: none;
@@ -1028,6 +1028,10 @@ img {
     transform: translateX(-50%);
 }
 
+.global-living-row:hover .global-living-track {
+    animation-play-state: paused;
+}
+
 .global-living-track img {
     height: 300px;
     width: auto;
@@ -1036,11 +1040,364 @@ img {
 }
 
 @keyframes scrollLeft {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 @keyframes scrollRight {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Security Section */
+.hostel-security-section {
+    background-color: #0f0445;
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+.hostel-security-title {
+    font-family: var(--font-polymath-bold);
+    font-size: 56px;
+    margin-bottom: 24px;
+}
+
+.hostel-security-highlight {
+    color: #ffc800;
+}
+
+.hostel-security-subtitle {
+    font-family: var(--font-figtree-regular);
+    font-size: 18px;
+    color: #e0e0e0;
+    max-width: 85%;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.hostel-security-slider-container {
+    position: relative;
+}
+
+.hostel-security-card {
+    margin: 0 10px;
+    height: 100%;
+}
+
+.hostel-security-card-inner {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #271d58;
+}
+
+.hostel-security-card-inner h3 {
+    font-family: var(--font-polymath-bold);
+    font-size: 28px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.hostel-security-card-inner p {
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #e0e0e0;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.hostel-security-slider-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.hostel-security-slider-progress {
+    flex-grow: 1;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 30px;
+    position: relative;
+}
+
+.hostel-security-slider-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #ffc800;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.hostel-security-slider-nav {
+    display: flex;
+    gap: 16px;
+}
+
+.hostel-security-slider-prev,
+.hostel-security-slider-next {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.hostel-security-slider-prev:hover,
+.hostel-security-slider-next:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.hostel-security-slider-prev.slick-disabled,
+.hostel-security-slider-next.slick-disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.hostel-security-slider-prev.slick-disabled:hover,
+.hostel-security-slider-next.slick-disabled:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Slick adjustments */
+.hostel-security-slider .slick-track {
+    display: flex;
+}
+
+.hostel-security-slider .slick-slide {
+    display: flex;
+    height: inherit !important;
+}
+
+.hostel-security-slider .slick-slide>div {
+    display: flex;
+    flex: 1;
+}
+
+/* Hostel Booking Section */
+.hostel-booking-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.hostel-booking-header {
+    margin-bottom: 60px;
+}
+
+.hostel-booking-header h2 {
+    font-family: var(--font-polymath-bold);
+    font-size: 48px;
+    color: #555555;
+    margin-bottom: 16px;
+}
+
+.text-purple {
+    background: linear-gradient(to right, #B53C72, #5641E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.hostel-booking-header p {
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #333333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hostel-booking-timeline-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.hostel-booking-timeline-line {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #00bcd4; /* Base color or default */
+    background: linear-gradient(to right, #00d4ff, #007bff); /* Or light gray, but the image shows cyan line */
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.hostel-booking-timeline-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(to right, #00bcd4, #007bff);
+    width: 0;
+    transition: width 0.4s ease;
+    z-index: 2;
+}
+
+.hostel-booking-tabs {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    border-bottom: none;
+    flex-wrap: nowrap;
+}
+
+.hostel-booking-tabs .nav-link {
+    background: transparent !important;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    width: auto;
+}
+
+.booking-tab-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 6px #ffffff;
+}
+
+.booking-tab-icon img {
+    width: 24px;
+    height: 24px;
+    filter: invert(0.5); /* Just to make inactive icons visible, but wait, they are svgs */
+}
+
+.hostel-booking-tabs .nav-link.active .booking-tab-icon {
+    background-color: #271d58;
+}
+
+.hostel-booking-tabs .nav-link.active .booking-tab-icon img {
+    filter: brightness(0) invert(1);
+}
+
+.booking-tab-text {
+    font-family: var(--font-polymath-bold);
+    font-size: 16px;
+    color: #888888;
+    text-align: center;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.hostel-booking-tabs .nav-link.active .booking-tab-text {
+    background: linear-gradient(to right, #B53C72, #5641E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.hostel-booking-content {
+    margin-top: 40px;
+}
+
+.booking-card-dark {
+    background-color: #1b1142;
+    border-radius: 16px;
+    padding: 40px;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.booking-card-dark .step-label {
+    color: #ffc800;
+    font-family: var(--font-figtree-semibold);
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.booking-card-dark h3 {
+    font-family: var(--font-polymath-bold);
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.booking-card-dark p {
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #e0e0e0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.booking-card-light {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.booking-card-light h4 {
+    font-family: var(--font-figtree-semibold);
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.booking-card-light p {
+    font-family: var(--font-figtree-regular);
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.btn-next-step {
+    background-color: #1b1142;
+    color: #ffffff;
+    font-family: var(--font-figtree-semibold);
+    font-size: 14px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: none;
+    transition: opacity 0.3s ease;
+}
+
+.btn-next-step:hover {
+    opacity: 0.9;
+    color: #ffffff;
 }
