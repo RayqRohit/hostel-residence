@@ -7,7 +7,7 @@
     <title>PU Hostels & Residences</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -23,7 +23,8 @@
                     <p class="hostel-residence-desc">From your first hello to your final adieu, you'll build
                         friendships, chase dreams, and create memories that stay with you forever. <strong>43
                             homes</strong> on campus, <strong>83 room options</strong> for 2026-27, <br> from
-                        <strong>₹79,000 to ₹3,50,000</strong> a year.</p>
+                        <strong>₹79,000 to ₹3,50,000</strong> a year.
+                    </p>
                     <div class="hostel-residence-actions">
                         <a href="#" class="btn hostel-residence-btn-primary">See rooms & fees</a>
                         <a href="#" class="btn hostel-residence-btn-outline">Explore campus life</a>
@@ -62,7 +63,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="hostel-residence-filters-section">
         <div class="container">
             <div class="row">
@@ -95,30 +96,35 @@
                                 <div class="col-md-3 col-sm-6 mb-4">
                                     <h4 class="hostel-residence-filter-category">Hostel for</h4>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="hostel_for" checked>
+                                        <input type="radio" name="hostel_for" value="boys">
                                         <span class="hostel-residence-radio-mark"></span>
                                         Boys
                                     </label>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="hostel_for">
+                                        <input type="radio" name="hostel_for" value="girls">
                                         <span class="hostel-residence-radio-mark"></span>
                                         Girls
                                     </label>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="hostel_for">
+                                        <input type="radio" name="hostel_for" value="coed">
                                         <span class="hostel-residence-radio-mark"></span>
                                         Co-ed
+                                    </label>
+                                    <label class="hostel-residence-radio">
+                                        <input type="radio" name="hostel_for" value="international">
+                                        <span class="hostel-residence-radio-mark"></span>
+                                        International students
                                     </label>
                                 </div>
                                 <div class="col-md-3 col-sm-6 mb-4">
                                     <h4 class="hostel-residence-filter-category">Cooling</h4>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="cooling" checked>
+                                        <input type="radio" name="cooling" value="ac">
                                         <span class="hostel-residence-radio-mark"></span>
                                         AC
                                     </label>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="cooling">
+                                        <input type="radio" name="cooling" value="non_ac">
                                         <span class="hostel-residence-radio-mark"></span>
                                         Non AC
                                     </label>
@@ -126,12 +132,12 @@
                                 <div class="col-md-3 col-sm-6 mb-4">
                                     <h4 class="hostel-residence-filter-category">Washroom</h4>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="washroom" checked>
+                                        <input type="radio" name="washroom" value="attached">
                                         <span class="hostel-residence-radio-mark"></span>
                                         Attached
                                     </label>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="washroom">
+                                        <input type="radio" name="washroom" value="common">
                                         <span class="hostel-residence-radio-mark"></span>
                                         Common
                                     </label>
@@ -139,29 +145,24 @@
                                 <div class="col-md-3 col-sm-6 mb-4">
                                     <h4 class="hostel-residence-filter-category">Sharing</h4>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="sharing" checked>
+                                        <input type="radio" name="sharing" value="1_2">
                                         <span class="hostel-residence-radio-mark"></span>
                                         1 to 2
                                     </label>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="sharing">
+                                        <input type="radio" name="sharing" value="3_4">
                                         <span class="hostel-residence-radio-mark"></span>
                                         3 to 4
                                     </label>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="sharing">
+                                        <input type="radio" name="sharing" value="5_6">
                                         <span class="hostel-residence-radio-mark"></span>
                                         5 to 6
                                     </label>
                                     <label class="hostel-residence-radio">
-                                        <input type="radio" name="sharing">
+                                        <input type="radio" name="sharing" value="7_more">
                                         <span class="hostel-residence-radio-mark"></span>
                                         7 or more
-                                    </label>
-                                    <label class="hostel-residence-radio">
-                                        <input type="radio" name="sharing">
-                                        <span class="hostel-residence-radio-mark"></span>
-                                        PU Goa Entrance
                                     </label>
                                 </div>
                             </div>
@@ -186,6 +187,7 @@
                                 </div>
                                 <div class="hostel-residence-budget-slider">
                                     <div class="slider-track"></div>
+                                    <div class="slider-range"></div>
                                     <div class="slider-handle left"></div>
                                     <div class="slider-handle right"></div>
                                 </div>
@@ -204,11 +206,17 @@
 
                         <div class="hostel-residence-filter-footer">
                             <label class="hostel-residence-checkbox">
-                                <input type="checkbox" checked>
+                                <input type="checkbox" id="open-for-booking-checkbox" checked>
                                 <span class="hostel-residence-checkbox-mark"></span>
                                 Only show rooms open for booking
                             </label>
-                            <a href="#" class="hostel-residence-clear-filters">Clear all filters</a>
+                            <button type="button" class="hostel-residence-clear-filters" title="Clear all filters">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                                    <path d="M3 3v5h5"></path>
+                                </svg>
+                                <span>Clear all filters</span>
+                            </button>
                         </div>
                     </div>
 
@@ -216,24 +224,19 @@
                     <div class="row mt-5">
                         <!-- Card 1 -->
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="hostel-residence-room-card">
+                            <div class="hostel-residence-room-card" data-hostel-for="girls,international" data-cooling="non_ac" data-washroom="common" data-sharing="5_6">
                                 <div class="hostel-residence-room-img-wrapper">
                                     <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
                                         class="img-fluid">
                                     <span class="hostel-residence-badge-yellow">Non AC</span>
-                                    <label class="hostel-residence-compare">
-                                        <input type="checkbox">
-                                        <span class="compare-mark"></span>
-                                        Compare
-                                    </label>
                                 </div>
                                 <div class="hostel-residence-room-content">
                                     <div class="hostel-residence-room-tags">
-                                        <span class="hostel-residence-tag-light">Boys</span>
-                                        <span class="hostel-residence-tag-dark">International students</span>
-                                    </div>
+<span class="hostel-residence-tag-light">Girls</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
                                     <h3 class="hostel-residence-room-title">Abraham Lincoln A</h3>
-                                    <p class="hostel-residence-room-info">5 sharing · Common washroom</p>
+                                    <p class="hostel-residence-room-info">5-6 sharing · Common washroom</p>
                                     <div class="hostel-residence-room-price">
                                         <strong>₹79,000</strong><span>/ year</span>
                                     </div>
@@ -244,23 +247,19 @@
 
                         <!-- Card 2 -->
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="hostel-residence-room-card">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed,international" data-cooling="non_ac" data-washroom="attached" data-sharing="3_4">
                                 <div class="hostel-residence-room-img-wrapper">
                                     <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
                                         class="img-fluid">
                                     <span class="hostel-residence-badge-yellow">Non AC</span>
-                                    <label class="hostel-residence-compare">
-                                        <input type="checkbox">
-                                        <span class="compare-mark"></span>
-                                        Compare
-                                    </label>
                                 </div>
                                 <div class="hostel-residence-room-content">
                                     <div class="hostel-residence-room-tags">
-                                        <span class="hostel-residence-tag-light">Boys</span>
-                                    </div>
+<span class="hostel-residence-tag-light">Co-ed</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
                                     <h3 class="hostel-residence-room-title">Atal Bhawan B</h3>
-                                    <p class="hostel-residence-room-info">8 to 10 sharing · Common washroom</p>
+                                    <p class="hostel-residence-room-info">3-4 sharing · Attached washroom</p>
                                     <div class="hostel-residence-room-price">
                                         <strong>₹90,000</strong><span>/ year</span>
                                     </div>
@@ -271,23 +270,19 @@
 
                         <!-- Card 3 -->
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="hostel-residence-room-card">
+                            <div class="hostel-residence-room-card" data-hostel-for="girls,international" data-cooling="ac" data-washroom="attached" data-sharing="5_6">
                                 <div class="hostel-residence-room-img-wrapper">
                                     <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
                                         class="img-fluid">
-                                    <span class="hostel-residence-badge-yellow">Non AC</span>
-                                    <label class="hostel-residence-compare">
-                                        <input type="checkbox">
-                                        <span class="compare-mark"></span>
-                                        Compare
-                                    </label>
+                                    <span class="hostel-residence-badge-yellow">AC</span>
                                 </div>
                                 <div class="hostel-residence-room-content">
                                     <div class="hostel-residence-room-tags">
-                                        <span class="hostel-residence-tag-light">Girls</span>
-                                    </div>
+<span class="hostel-residence-tag-light">Girls</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
                                     <h3 class="hostel-residence-room-title">Sarojini Bhawan B</h3>
-                                    <p class="hostel-residence-room-info">5 sharing · Common washroom</p>
+                                    <p class="hostel-residence-room-info">5-6 sharing · Attached washroom</p>
                                     <div class="hostel-residence-room-price">
                                         <strong>₹95,000</strong><span>/ year</span>
                                     </div>
@@ -298,24 +293,19 @@
 
                         <!-- Card 4 -->
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="hostel-residence-room-card">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed,international" data-cooling="non_ac" data-washroom="common" data-sharing="5_6">
                                 <div class="hostel-residence-room-img-wrapper">
                                     <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
                                         class="img-fluid">
                                     <span class="hostel-residence-badge-yellow">Non AC</span>
-                                    <label class="hostel-residence-compare">
-                                        <input type="checkbox">
-                                        <span class="compare-mark"></span>
-                                        Compare
-                                    </label>
                                 </div>
                                 <div class="hostel-residence-room-content">
                                     <div class="hostel-residence-room-tags">
-                                        <span class="hostel-residence-tag-light">Boys</span>
-                                        <span class="hostel-residence-tag-dark">International students</span>
-                                    </div>
+<span class="hostel-residence-tag-light">Co-ed</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
                                     <h3 class="hostel-residence-room-title">Abraham Lincoln A</h3>
-                                    <p class="hostel-residence-room-info">5 sharing · Common washroom</p>
+                                    <p class="hostel-residence-room-info">5-6 sharing · Common washroom</p>
                                     <div class="hostel-residence-room-price">
                                         <strong>₹79,000</strong><span>/ year</span>
                                     </div>
@@ -326,23 +316,18 @@
 
                         <!-- Card 5 -->
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="hostel-residence-room-card">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed" data-cooling="ac" data-washroom="attached" data-sharing="3_4">
                                 <div class="hostel-residence-room-img-wrapper">
                                     <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
                                         class="img-fluid">
-                                    <span class="hostel-residence-badge-yellow">Non AC</span>
-                                    <label class="hostel-residence-compare">
-                                        <input type="checkbox">
-                                        <span class="compare-mark"></span>
-                                        Compare
-                                    </label>
+                                    <span class="hostel-residence-badge-yellow">AC</span>
                                 </div>
                                 <div class="hostel-residence-room-content">
                                     <div class="hostel-residence-room-tags">
-                                        <span class="hostel-residence-tag-light">Boys</span>
-                                    </div>
+<span class="hostel-residence-tag-light">Co-ed</span>
+</div>
                                     <h3 class="hostel-residence-room-title">Atal Bhawan B</h3>
-                                    <p class="hostel-residence-room-info">8 to 10 sharing · Common washroom</p>
+                                    <p class="hostel-residence-room-info">3-4 sharing · Attached washroom</p>
                                     <div class="hostel-residence-room-price">
                                         <strong>₹90,000</strong><span>/ year</span>
                                     </div>
@@ -353,23 +338,19 @@
 
                         <!-- Card 6 -->
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="hostel-residence-room-card">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed,international" data-cooling="non_ac" data-washroom="attached" data-sharing="3_4">
                                 <div class="hostel-residence-room-img-wrapper">
                                     <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
                                         class="img-fluid">
                                     <span class="hostel-residence-badge-yellow">Non AC</span>
-                                    <label class="hostel-residence-compare">
-                                        <input type="checkbox">
-                                        <span class="compare-mark"></span>
-                                        Compare
-                                    </label>
                                 </div>
                                 <div class="hostel-residence-room-content">
                                     <div class="hostel-residence-room-tags">
-                                        <span class="hostel-residence-tag-light">Girls</span>
-                                    </div>
+<span class="hostel-residence-tag-light">Co-ed</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
                                     <h3 class="hostel-residence-room-title">Sarojini Bhawan B</h3>
-                                    <p class="hostel-residence-room-info">5 sharing · Common washroom</p>
+                                    <p class="hostel-residence-room-info">3-4 sharing · Attached washroom</p>
                                     <div class="hostel-residence-room-price">
                                         <strong>₹95,000</strong><span>/ year</span>
                                     </div>
@@ -380,24 +361,19 @@
 
                         <!-- Card 7 -->
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="hostel-residence-room-card">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed,international" data-cooling="non_ac" data-washroom="attached" data-sharing="7_more">
                                 <div class="hostel-residence-room-img-wrapper">
                                     <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
                                         class="img-fluid">
                                     <span class="hostel-residence-badge-yellow">Non AC</span>
-                                    <label class="hostel-residence-compare">
-                                        <input type="checkbox">
-                                        <span class="compare-mark"></span>
-                                        Compare
-                                    </label>
                                 </div>
                                 <div class="hostel-residence-room-content">
                                     <div class="hostel-residence-room-tags">
-                                        <span class="hostel-residence-tag-light">Boys</span>
-                                        <span class="hostel-residence-tag-dark">International students</span>
-                                    </div>
+<span class="hostel-residence-tag-light">Co-ed</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
                                     <h3 class="hostel-residence-room-title">Abraham Lincoln A</h3>
-                                    <p class="hostel-residence-room-info">5 sharing · Common washroom</p>
+                                    <p class="hostel-residence-room-info">7+ sharing · Attached washroom</p>
                                     <div class="hostel-residence-room-price">
                                         <strong>₹79,000</strong><span>/ year</span>
                                     </div>
@@ -408,23 +384,18 @@
 
                         <!-- Card 8 -->
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="hostel-residence-room-card">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed" data-cooling="non_ac" data-washroom="common" data-sharing="5_6">
                                 <div class="hostel-residence-room-img-wrapper">
                                     <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
                                         class="img-fluid">
                                     <span class="hostel-residence-badge-yellow">Non AC</span>
-                                    <label class="hostel-residence-compare">
-                                        <input type="checkbox">
-                                        <span class="compare-mark"></span>
-                                        Compare
-                                    </label>
                                 </div>
                                 <div class="hostel-residence-room-content">
                                     <div class="hostel-residence-room-tags">
-                                        <span class="hostel-residence-tag-light">Boys</span>
-                                    </div>
+<span class="hostel-residence-tag-light">Co-ed</span>
+</div>
                                     <h3 class="hostel-residence-room-title">Atal Bhawan B</h3>
-                                    <p class="hostel-residence-room-info">8 to 10 sharing · Common washroom</p>
+                                    <p class="hostel-residence-room-info">5-6 sharing · Common washroom</p>
                                     <div class="hostel-residence-room-price">
                                         <strong>₹90,000</strong><span>/ year</span>
                                     </div>
@@ -435,23 +406,19 @@
 
                         <!-- Card 9 -->
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="hostel-residence-room-card">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed,international" data-cooling="ac" data-washroom="common" data-sharing="3_4">
                                 <div class="hostel-residence-room-img-wrapper">
                                     <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
                                         class="img-fluid">
-                                    <span class="hostel-residence-badge-yellow">Non AC</span>
-                                    <label class="hostel-residence-compare">
-                                        <input type="checkbox">
-                                        <span class="compare-mark"></span>
-                                        Compare
-                                    </label>
+                                    <span class="hostel-residence-badge-yellow">AC</span>
                                 </div>
                                 <div class="hostel-residence-room-content">
                                     <div class="hostel-residence-room-tags">
-                                        <span class="hostel-residence-tag-light">Girls</span>
-                                    </div>
+<span class="hostel-residence-tag-light">Co-ed</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
                                     <h3 class="hostel-residence-room-title">Sarojini Bhawan B</h3>
-                                    <p class="hostel-residence-room-info">5 sharing · Common washroom</p>
+                                    <p class="hostel-residence-room-info">3-4 sharing · Common washroom</p>
                                     <div class="hostel-residence-room-price">
                                         <strong>₹95,000</strong><span>/ year</span>
                                     </div>
@@ -460,8 +427,281 @@
                             </div>
                         </div>
 
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed,international" data-cooling="ac" data-washroom="attached" data-sharing="1_2">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Co-ed</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 1</h3>
+                                    <p class="hostel-residence-room-info">1-2 sharing · Attached washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹85,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed,international" data-cooling="ac" data-washroom="attached" data-sharing="5_6">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Co-ed</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 2</h3>
+                                    <p class="hostel-residence-room-info">5-6 sharing · Attached washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹1,10,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="boys,international" data-cooling="non_ac" data-washroom="attached" data-sharing="1_2">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">Non AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Boys</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 3</h3>
+                                    <p class="hostel-residence-room-info">1-2 sharing · Attached washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹1,40,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed" data-cooling="ac" data-washroom="attached" data-sharing="1_2">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Co-ed</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 4</h3>
+                                    <p class="hostel-residence-room-info">1-2 sharing · Attached washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹1,60,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="girls" data-cooling="ac" data-washroom="attached" data-sharing="5_6">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Girls</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 5</h3>
+                                    <p class="hostel-residence-room-info">5-6 sharing · Attached washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹1,90,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="girls,international" data-cooling="ac" data-washroom="attached" data-sharing="7_more">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Girls</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 6</h3>
+                                    <p class="hostel-residence-room-info">7+ sharing · Attached washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹2,10,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed" data-cooling="non_ac" data-washroom="common" data-sharing="3_4">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">Non AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Co-ed</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 7</h3>
+                                    <p class="hostel-residence-room-info">3-4 sharing · Common washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹2,50,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="boys,international" data-cooling="non_ac" data-washroom="attached" data-sharing="1_2">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">Non AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Boys</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 8</h3>
+                                    <p class="hostel-residence-room-info">1-2 sharing · Attached washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹3,00,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="girls" data-cooling="ac" data-washroom="common" data-sharing="7_more">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Girls</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 9</h3>
+                                    <p class="hostel-residence-room-info">7+ sharing · Common washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹3,20,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="coed" data-cooling="non_ac" data-washroom="common" data-sharing="3_4">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">Non AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Co-ed</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 10</h3>
+                                    <p class="hostel-residence-room-info">3-4 sharing · Common washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹3,40,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="boys,international" data-cooling="ac" data-washroom="common" data-sharing="3_4">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Boys</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 11</h3>
+                                    <p class="hostel-residence-room-info">3-4 sharing · Common washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹1,05,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generated Card -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="hostel-residence-room-card" data-hostel-for="girls,international" data-cooling="ac" data-washroom="common" data-sharing="5_6">
+                                <div class="hostel-residence-room-img-wrapper">
+                                    <img src="assets/images/hostel-residence-rooms/hostel-room-listing.webp" alt="Room"
+                                        class="img-fluid">
+                                    <span class="hostel-residence-badge-yellow">AC</span>
+                                </div>
+                                <div class="hostel-residence-room-content">
+                                    <div class="hostel-residence-room-tags">
+<span class="hostel-residence-tag-light">Girls</span>
+<span class="hostel-residence-tag-dark">International students</span>
+</div>
+                                    <h3 class="hostel-residence-room-title">Test Hostel Room 12</h3>
+                                    <p class="hostel-residence-room-info">5-6 sharing · Common washroom</p>
+                                    <div class="hostel-residence-room-price">
+                                        <strong>₹1,30,000</strong><span>/ year</span>
+                                    </div>
+                                    <a href="#" class="hostel-residence-room-btn-outline">Enquire about this room</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-12" id="load-more-container">
-                            <a href="#" class="hostel-residence-load-more" id="load-more-btn">Show 24 more of 74 rooms</a>
+                            <a href="#" class="hostel-residence-load-more" id="load-more-btn">Show 24 more of 74
+                                rooms</a>
                         </div>
                     </div>
                 </div>
@@ -471,9 +711,14 @@
 
     <section class="hostel-residence-amenities-section">
         <div class="container">
-            <h2 class="hostel-residence-amenities-title">Choose a place to stay. <br> <strong>Find the people you'll never <br> <span class="hostel-residence-amenities-highlight">want to leave.</span></strong></h2>
-            <p class="hostel-residence-amenities-desc">Some of your best lessons will not happen in a classroom. They will come from cheering at your first championship, performing at a campus festival, joining a club on a whim, building your first startup, or sharing midnight chai with friends who soon become family. Home to 27,000+ resident students, our hostels are where unforgettable college stories begin.</p>
-            
+            <p class="hostel-residence-amenities-title-start">Choose a place to stay.</p>
+            <h2 class="hostel-residence-amenities-title"><strong>Find the people you'll
+                    never <br> <span class="hostel-residence-amenities-highlight">want to leave.</span></strong></h2>
+            <p class="hostel-residence-amenities-desc">Some of your best lessons will not happen in a classroom. They
+                will come from cheering at your first championship, performing at a campus festival, joining a club on a
+                whim, building your first startup, or sharing midnight chai with friends who soon become family. Home to
+                27,000+ resident students, our hostels are where unforgettable college stories begin.</p>
+
             <div class="hostel-residence-amenities-tabs">
                 <button class="btn active">Comfort</button>
                 <button class="btn">Community</button>
@@ -481,7 +726,8 @@
             </div>
 
             <h3 class="hostel-residence-amenities-subtitle">World-class amenities right outside your door</h3>
-            <p class="hostel-residence-amenities-subdesc">Built for the way millennials and Gen Z live, PU hostels blend aesthetic design, comfort and a serene atmosphere to make every stay memorable.</p>
+            <p class="hostel-residence-amenities-subdesc">Built for the way millennials and Gen Z live, PU hostels blend
+                aesthetic design, comfort and a serene atmosphere to make every stay memorable.</p>
 
             <div class="hostel-residence-amenities-slider">
                 <!-- Slide 1 -->
@@ -489,7 +735,8 @@
                     <img src="https://placehold.co/600x400" alt="Placeholder" class="hostel-residence-amenity-img">
                     <div class="hostel-residence-amenity-content">
                         <h4>Spacious, fully furnished rooms</h4>
-                        <p>Well ventilated, with an individual bed, study table and closet for every student, so the space feels like yours from day one.</p>
+                        <p>Well ventilated, with an individual bed, study table and closet for every student, so the
+                            space feels like yours from day one.</p>
                     </div>
                 </div>
                 <!-- Slide 2 -->
@@ -497,7 +744,8 @@
                     <img src="https://placehold.co/600x400" alt="Placeholder" class="hostel-residence-amenity-img">
                     <div class="hostel-residence-amenity-content">
                         <h4>Common rooms for student interaction</h4>
-                        <p>Call it a community area or a get together area. It is the go to spot for every after college chilling session.</p>
+                        <p>Call it a community area or a get together area. It is the go to spot for every after college
+                            chilling session.</p>
                     </div>
                 </div>
                 <!-- Slide 3 -->
@@ -505,7 +753,8 @@
                     <img src="https://placehold.co/600x400" alt="Placeholder" class="hostel-residence-amenity-img">
                     <div class="hostel-residence-amenity-content">
                         <h4>Spaces for community hangouts</h4>
-                        <p>Concerts, sports competitions, games and activities, counselling sessions, fests and festivals, alumni interactions. The vibe stays energetic.</p>
+                        <p>Concerts, sports competitions, games and activities, counselling sessions, fests and
+                            festivals, alumni interactions. The vibe stays energetic.</p>
                     </div>
                 </div>
                 <!-- Slide 4 -->
@@ -513,7 +762,8 @@
                     <img src="https://placehold.co/600x400" alt="Placeholder" class="hostel-residence-amenity-img">
                     <div class="hostel-residence-amenity-content">
                         <h4>Modern attached washrooms</h4>
-                        <p>Hygienic and well maintained washrooms attached to most rooms, providing convenience and privacy.</p>
+                        <p>Hygienic and well maintained washrooms attached to most rooms, providing convenience and
+                            privacy.</p>
                     </div>
                 </div>
                 <!-- Slide 5 -->
@@ -521,7 +771,8 @@
                     <img src="https://placehold.co/600x400" alt="Placeholder" class="hostel-residence-amenity-img">
                     <div class="hostel-residence-amenity-content">
                         <h4>Modern attached washrooms</h4>
-                        <p>Hygienic and well maintained washrooms attached to most rooms, providing convenience and privacy.</p>
+                        <p>Hygienic and well maintained washrooms attached to most rooms, providing convenience and
+                            privacy.</p>
                     </div>
                 </div>
                 <!-- Slide 6 -->
@@ -529,7 +780,8 @@
                     <img src="https://placehold.co/600x400" alt="Placeholder" class="hostel-residence-amenity-img">
                     <div class="hostel-residence-amenity-content">
                         <h4>Modern attached washrooms</h4>
-                        <p>Hygienic and well maintained washrooms attached to most rooms, providing convenience and privacy.</p>
+                        <p>Hygienic and well maintained washrooms attached to most rooms, providing convenience and
+                            privacy.</p>
                     </div>
                 </div>
             </div>
@@ -541,12 +793,14 @@
                 <div class="hostel-residence-slider-nav">
                     <button class="hostel-residence-slider-prev">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </button>
                     <button class="hostel-residence-slider-next">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </button>
                 </div>
@@ -557,30 +811,39 @@
                     <div class="col-lg-7 hostel-residence-feature-left">
                         <span class="hostel-residence-feature-badge">Everyday essentials, all on campus</span>
                         <h3>Arogya Card, included</h3>
-                        <p>The Arogya Card is part of your hostel fee, so care at Parul Sevashram Hospital on campus is covered from the day you move in: 10% off OPD medicines, 25% off OPD investigations and reports (CT scan, MRI and dental implants excluded), and cover of ₹1,00,000 for major surgery. The hospital runs 24x7 on a chargeable basis.</p>
+                        <p>The Arogya Card is part of your hostel fee, so care at Parul Sevashram Hospital on campus is
+                            covered from the day you move in: 10% off OPD medicines, 25% off OPD investigations and
+                            reports (CT scan, MRI and dental implants excluded), and cover of ₹1,00,000 for major
+                            surgery. The hospital runs 24x7 on a chargeable basis.</p>
                     </div>
                     <div class="col-lg-5 hostel-residence-feature-right">
                         <div class="hostel-residence-feature-list-card">
                             <span class="hostel-residence-feature-list-badge">In the fee</span>
                             <ul class="hostel-residence-feature-list">
                                 <li>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="10" cy="10" r="10" fill="#ffc800"/>
-                                        <path d="M6 10L9 13L14 7" stroke="#1b1142" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="10" fill="#ffc800" />
+                                        <path d="M6 10L9 13L14 7" stroke="#1b1142" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     Bed, study table and wardrobe
                                 </li>
                                 <li>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="10" cy="10" r="10" fill="#ffc800"/>
-                                        <path d="M6 10L9 13L14 7" stroke="#1b1142" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="10" fill="#ffc800" />
+                                        <path d="M6 10L9 13L14 7" stroke="#1b1142" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     Mess meals, Wi-Fi. Laundry, six pairs a week.
                                 </li>
                                 <li>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="10" cy="10" r="10" fill="#ffc800"/>
-                                        <path d="M6 10L9 13L14 7" stroke="#1b1142" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="10" fill="#ffc800" />
+                                        <path d="M6 10L9 13L14 7" stroke="#1b1142" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     Housekeeping. Water and power around the clock. A one time hostel kit.
                                 </li>
@@ -590,180 +853,292 @@
                 </div>
             </div>
 
-            <p class="hostel-residence-amenities-note"><strong>Note:</strong> The hostel fee is not refundable, not transferable and cannot be paid pro rata. Rooms are allotted first come, first served.</p>
+            <p class="hostel-residence-amenities-note"><strong>Note:</strong> The hostel fee is not refundable, not
+                transferable and cannot be paid pro rata. Rooms are allotted first come, first served.</p>
         </div>
     </section>
 
-    <section class="global-living-experience-section">
+    <section class="hostel-residence-global-living-experience-section">
         <div class="container text-center">
-            <h2 class="global-living-title">A global living experience</h2>
-            <p class="global-living-subtitle">The university celebrates India's diversity by marking festivals from across regions, communities and traditions - observed as participation, the way the year unfolds.</p>
-            
-            <div class="global-living-tabs nav nav-pills" id="global-living-tab" role="tablist">
-                <button class="global-living-tab nav-link active" id="gl-tab-1" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#gl-pane-1" data-target="#gl-pane-1" type="button" role="tab" aria-controls="gl-pane-1" aria-selected="true">
+            <h2 class="hostel-residence-global-living-title">A global living experience</h2>
+            <p class="hostel-residence-global-living-subtitle">The university celebrates India's diversity by marking
+                festivals from across regions, communities and traditions - observed as participation, the way the year
+                unfolds.</p>
+
+            <div class="hostel-residence-global-living-tabs nav nav-pills" id="hostel-residence-global-living-tab"
+                role="tablist">
+                <button class="hostel-residence-global-living-tab nav-link active" id="gl-tab-1" data-bs-toggle="pill"
+                    data-toggle="pill" data-bs-target="#gl-pane-1" data-target="#gl-pane-1" type="button" role="tab"
+                    aria-controls="gl-pane-1" aria-selected="true">
                     6,000+ international students
-                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg" class="global-living-tab-icon" alt="">
+                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg"
+                        class="hostel-residence-global-living-tab-icon" alt="">
                 </button>
-                <button class="global-living-tab nav-link" id="gl-tab-2" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#gl-pane-2" data-target="#gl-pane-2" type="button" role="tab" aria-controls="gl-pane-2" aria-selected="false">
+                <button class="hostel-residence-global-living-tab nav-link" id="gl-tab-2" data-bs-toggle="pill"
+                    data-toggle="pill" data-bs-target="#gl-pane-2" data-target="#gl-pane-2" type="button" role="tab"
+                    aria-controls="gl-pane-2" aria-selected="false">
                     75+ countries
-                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg" class="global-living-tab-icon" alt="">
+                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg"
+                        class="hostel-residence-global-living-tab-icon" alt="">
                 </button>
-                <button class="global-living-tab nav-link" id="gl-tab-3" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#gl-pane-3" data-target="#gl-pane-3" type="button" role="tab" aria-controls="gl-pane-3" aria-selected="false">
+                <button class="hostel-residence-global-living-tab nav-link" id="gl-tab-3" data-bs-toggle="pill"
+                    data-toggle="pill" data-bs-target="#gl-pane-3" data-target="#gl-pane-3" type="button" role="tab"
+                    aria-controls="gl-pane-3" aria-selected="false">
                     Cultural exchange programmes
-                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg" class="global-living-tab-icon" alt="">
+                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg"
+                        class="hostel-residence-global-living-tab-icon" alt="">
                 </button>
-                <button class="global-living-tab nav-link" id="gl-tab-4" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#gl-pane-4" data-target="#gl-pane-4" type="button" role="tab" aria-controls="gl-pane-4" aria-selected="false">
+                <button class="hostel-residence-global-living-tab nav-link" id="gl-tab-4" data-bs-toggle="pill"
+                    data-toggle="pill" data-bs-target="#gl-pane-4" data-target="#gl-pane-4" type="button" role="tab"
+                    aria-controls="gl-pane-4" aria-selected="false">
                     Round the clock support
-                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg" class="global-living-tab-icon" alt="">
+                    <img src="assets/images/hostel-global-life/arrow-down-s-line.svg"
+                        class="hostel-residence-global-living-tab-icon" alt="">
                 </button>
             </div>
         </div>
-        
+
         <div class="tab-content" id="global-living-tabContent">
             <!-- Pane 1 -->
             <div class="tab-pane fade show active" id="gl-pane-1" role="tabpanel" aria-labelledby="gl-tab-1">
-                <div class="global-living-scroller-container">
-                    <div class="global-living-row left-scroll">
-                        <div class="global-living-track">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                <div class="hostel-residence-global-living-scroller-container">
+                    <div class="hostel-residence-global-living-row left-scroll">
+                        <div class="hostel-residence-global-living-track">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
                         </div>
                     </div>
-                    <div class="global-living-row right-scroll">
-                        <div class="global-living-track">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                    <div class="hostel-residence-global-living-row right-scroll">
+                        <div class="hostel-residence-global-living-track">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Pane 2 -->
             <div class="tab-pane fade" id="gl-pane-2" role="tabpanel" aria-labelledby="gl-tab-2">
-                <div class="global-living-scroller-container">
-                    <div class="global-living-row left-scroll">
-                        <div class="global-living-track">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                <div class="hostel-residence-global-living-scroller-container">
+                    <div class="hostel-residence-global-living-row left-scroll">
+                        <div class="hostel-residence-global-living-track">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
                         </div>
                     </div>
-                    <div class="global-living-row right-scroll">
-                        <div class="global-living-track">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                    <div class="hostel-residence-global-living-row right-scroll">
+                        <div class="hostel-residence-global-living-track">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Pane 3 -->
             <div class="tab-pane fade" id="gl-pane-3" role="tabpanel" aria-labelledby="gl-tab-3">
-                <div class="global-living-scroller-container">
-                    <div class="global-living-row left-scroll">
-                        <div class="global-living-track">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                <div class="hostel-residence-global-living-scroller-container">
+                    <div class="hostel-residence-global-living-row left-scroll">
+                        <div class="hostel-residence-global-living-track">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
                         </div>
                     </div>
-                    <div class="global-living-row right-scroll">
-                        <div class="global-living-track">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                    <div class="hostel-residence-global-living-row right-scroll">
+                        <div class="hostel-residence-global-living-track">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Pane 4 -->
             <div class="tab-pane fade" id="gl-pane-4" role="tabpanel" aria-labelledby="gl-tab-4">
-                <div class="global-living-scroller-container">
-                    <div class="global-living-row left-scroll">
-                        <div class="global-living-track">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
+                <div class="hostel-residence-global-living-scroller-container">
+                    <div class="hostel-residence-global-living-row left-scroll">
+                        <div class="hostel-residence-global-living-track">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
                         </div>
                     </div>
-                    <div class="global-living-row right-scroll">
-                        <div class="global-living-track">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp" alt="Global Life">
-                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp" alt="Global Life">
+                    <div class="hostel-residence-global-living-row right-scroll">
+                        <div class="hostel-residence-global-living-track">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_e63b19f742a805cd28d17e9546ac30b7.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_d729e51c4038af6172b94c0e8563ad19.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_94d2e681c5073af218e75b0963c41de5.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_8c41f7a205d963be1742e86c59a031df.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_51a8c6e3072f94bd16e53a7904c8d2f1.webp"
+                                alt="Global Life">
+                            <img src="assets/images/hostel-global-life/img_3f80a7c914e562bd71d639e2458ab0c6.webp"
+                                alt="Global Life">
                         </div>
                     </div>
                 </div>
@@ -771,39 +1146,43 @@
         </div>
     </section>
 
-    <section class="hostel-security-section">
+    <section class="hostel-residence-security-section">
         <div class="container">
-            <h2 class="hostel-security-title">Freedom and security, <span class="hostel-security-highlight">intact</span></h2>
-            <p class="hostel-security-subtitle">Every hostel block sits inside the 250 acre campus, so the same security layer covers your walk to class and your walk back at night.</p>
-            
-            <div class="hostel-security-slider-container">
-                <div class="hostel-security-slider">
+            <h2 class="hostel-security-title">Freedom and security, <span
+                    class="hostel-security-highlight">intact</span></h2>
+            <p class="hostel-security-subtitle">Every hostel block sits inside the 250 acre campus, so the same security
+                layer covers your walk to class and your walk back at night.</p>
+
+            <div class="hostel-residence-security-slider-container">
+                <div class="hostel-residence-security-slider">
                     <!-- Slide 1 -->
-                    <div class="hostel-security-card">
+                    <div class="hostel-residence-security-card">
                         <div class="hostel-security-card-inner">
                             <h3 class="hostel-security-highlight">On time notifications to parents</h3>
                             <p>Real time gate pass alerts help parents stay informed without constant check ins.</p>
                         </div>
                     </div>
                     <!-- Slide 2 -->
-                    <div class="hostel-security-card">
+                    <div class="hostel-residence-security-card">
                         <div class="hostel-security-card-inner">
                             <h3 class="hostel-security-highlight">Eyes on campus</h3>
                             <p>24x7 CCTV coverage keeps the hostels and the wider campus protected around the clock.</p>
                         </div>
                     </div>
                     <!-- Slide 3 -->
-                    <div class="hostel-security-card">
+                    <div class="hostel-residence-security-card">
                         <div class="hostel-security-card-inner">
                             <h3 class="hostel-security-highlight">Security that never sleeps</h3>
-                            <p>A trained security team is on duty at all hours, so you can focus on living your best campus life.</p>
+                            <p>A trained security team is on duty at all hours, so you can focus on living your best
+                                campus life.</p>
                         </div>
                     </div>
                     <!-- Slide 4 -->
-                    <div class="hostel-security-card">
+                    <div class="hostel-residence-security-card">
                         <div class="hostel-security-card-inner">
                             <h3 class="hostel-security-highlight">Hospital on campus</h3>
-                            <p>A 750 bed multi speciality hospital operates on the same campus, so emergency care is minutes away, not a drive away.</p>
+                            <p>A 750 bed multi speciality hospital operates on the same campus, so emergency care is
+                                minutes away, not a drive away.</p>
                         </div>
                     </div>
                 </div>
@@ -812,15 +1191,19 @@
                     <div class="hostel-security-slider-progress">
                         <div class="hostel-security-slider-progress-bar"></div>
                     </div>
-                    <div class="hostel-security-slider-nav">
-                        <button class="hostel-security-slider-prev">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <div class="hostel-residence-security-slider-nav">
+                        <button class="hostel-residence-security-slider-prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <button class="hostel-security-slider-next">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <button class="hostel-residence-security-slider-next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </button>
                     </div>
@@ -829,123 +1212,123 @@
         </div>
     </section>
 
-    <section class="hostel-booking-section">
+    <section class="hostel-residence-booking-section">
         <div class="container">
-            <div class="text-center hostel-booking-header">
+            <div class="text-center hostel-residence-booking-header">
                 <h2>How to book a <span class="text-purple">hostel room</span></h2>
-                <p>Four steps, and you can be holding a room the same day. Order matters, because rooms go in the sequence bookings arrive.</p>
+                <p>Four steps, and you can be holding a room the same day. Order matters, because rooms go in the
+                    sequence bookings arrive.</p>
             </div>
 
-            <div class="hostel-booking-timeline-wrapper">
-                <div class="hostel-booking-timeline-line">
-                    <div class="hostel-booking-timeline-progress" id="booking-timeline-progress"></div>
+            <div class="hostel-residence-booking-timeline-wrapper">
+                <div class="hostel-residence-booking-timeline-line">
+                    <div class="hostel-residence-booking-timeline-progress" id="booking-timeline-progress"></div>
                 </div>
-                <ul class="nav nav-pills hostel-booking-tabs" id="booking-tabs" role="tablist">
+                <ul class="nav nav-pills hostel-residence-booking-tabs" id="booking-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="booking-step1-tab" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#booking-step1" data-target="#booking-step1" type="button" role="tab" aria-controls="booking-step1" aria-selected="true" onclick="updateBookingProgress(0)">
-                            <div class="booking-tab-icon">
-                                <img src="assets/images/hostel-room-booking/hostel-room-booking-admission.svg" alt="Confirm admission">
+                        <button class="nav-link active" id="booking-step1-tab" data-bs-toggle="pill" data-toggle="pill"
+                            data-bs-target="#booking-step1" data-target="#booking-step1" type="button" role="tab"
+                            aria-controls="booking-step1" aria-selected="true" onclick="updateBookingProgress(0)">
+                            <div class="hostel-residence-booking-tab-icon">
+                                <img src="assets/images/hostel-room-booking/hostel-room-booking-admission.svg"
+                                    alt="Confirm admission">
                             </div>
-                            <span class="booking-tab-text">Confirm your admission</span>
+                            <span class="hostel-residence-booking-tab-text">Confirm your admission</span>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="booking-step2-tab" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#booking-step2" data-target="#booking-step2" type="button" role="tab" aria-controls="booking-step2" aria-selected="false" onclick="updateBookingProgress(33)">
-                            <div class="booking-tab-icon">
-                                <img src="assets/images/hostel-room-booking/hostel-room-booking-room-selection.svg" alt="Pick your room">
+                        <button class="nav-link" id="booking-step2-tab" data-bs-toggle="pill" data-toggle="pill"
+                            data-bs-target="#booking-step2" data-target="#booking-step2" type="button" role="tab"
+                            aria-controls="booking-step2" aria-selected="false" onclick="updateBookingProgress(33)">
+                            <div class="hostel-residence-booking-tab-icon">
+                                <img src="assets/images/hostel-room-booking/hostel-room-booking-room-selection.svg"
+                                    alt="Pick your room">
                             </div>
-                            <span class="booking-tab-text">Pick your room</span>
+                            <span class="hostel-residence-booking-tab-text">Pick your room</span>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="booking-step3-tab" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#booking-step3" data-target="#booking-step3" type="button" role="tab" aria-controls="booking-step3" aria-selected="false" onclick="updateBookingProgress(66)">
-                            <div class="booking-tab-icon">
-                                <img src="assets/images/hostel-room-booking/hostel-room-booking-payment.svg" alt="Pay 50% and book">
+                        <button class="nav-link" id="booking-step3-tab" data-bs-toggle="pill" data-toggle="pill"
+                            data-bs-target="#booking-step3" data-target="#booking-step3" type="button" role="tab"
+                            aria-controls="booking-step3" aria-selected="false" onclick="updateBookingProgress(66)">
+                            <div class="hostel-residence-booking-tab-icon">
+                                <img src="assets/images/hostel-room-booking/hostel-room-booking-payment.svg"
+                                    alt="Pay 50% and book">
                             </div>
-                            <span class="booking-tab-text">Pay 50% and book</span>
+                            <span class="hostel-residence-booking-tab-text">Pay 50% and book</span>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="booking-step4-tab" data-bs-toggle="pill" data-toggle="pill" data-bs-target="#booking-step4" data-target="#booking-step4" type="button" role="tab" aria-controls="booking-step4" aria-selected="false" onclick="updateBookingProgress(100)">
-                            <div class="booking-tab-icon">
-                                <img src="assets/images/hostel-room-booking/hostel-room-booking-allotment.svg" alt="Get your allotment">
+                        <button class="nav-link" id="booking-step4-tab" data-bs-toggle="pill" data-toggle="pill"
+                            data-bs-target="#booking-step4" data-target="#booking-step4" type="button" role="tab"
+                            aria-controls="booking-step4" aria-selected="false" onclick="updateBookingProgress(100)">
+                            <div class="hostel-residence-booking-tab-icon">
+                                <img src="assets/images/hostel-room-booking/hostel-room-booking-allotment.svg"
+                                    alt="Get your allotment">
                             </div>
-                            <span class="booking-tab-text">Get your allotment</span>
+                            <span class="hostel-residence-booking-tab-text">Get your allotment</span>
                         </button>
                     </li>
                 </ul>
             </div>
 
-            <div class="tab-content hostel-booking-content" id="booking-tabs-content">
-                <!-- Step 1 -->
-                <div class="tab-pane fade show active" id="booking-step1" role="tabpanel" aria-labelledby="booking-step1-tab">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-lg-5">
-                            <div class="booking-card-dark">
+            <div class="row g-4 justify-content-center hostel-residence-booking-content">
+                <div class="col-lg-5">
+                    <div class="hostel-residence-booking-card-dark">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active hostel-residence-booking-step-pane hostel-residence-booking-step1-pane"
+                                id="booking-step1-dark">
                                 <span class="step-label">STEP 1</span>
                                 <h3>Confirm your admission</h3>
                                 <p>Finish your programme admission first. Hostel booking opens only after that.</p>
                             </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="booking-card-light">
-                                <h4>What's next</h4>
-                                <p>AC or not, attached or common washroom, how many people you want to share with.</p>
-                                <button class="btn btn-next-step" onclick="goToNextBookingStep(1)">Next Step</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Step 2 -->
-                <div class="tab-pane fade" id="booking-step2" role="tabpanel" aria-labelledby="booking-step2-tab">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-lg-5">
-                            <div class="booking-card-dark">
+                            <div class="tab-pane fade hostel-residence-booking-step-pane hostel-residence-booking-step2-pane"
+                                id="booking-step2-dark">
                                 <span class="step-label">STEP 2</span>
                                 <h3>Pick your room</h3>
                                 <p>AC or not, attached or common washroom, how many people you want to share with.</p>
                             </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="booking-card-light">
-                                <h4>What's next</h4>
-                                <p>Secure your room by paying 50% of the annual hostel fee.</p>
-                                <button class="btn btn-next-step" onclick="goToNextBookingStep(2)">Next Step</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Step 3 -->
-                <div class="tab-pane fade" id="booking-step3" role="tabpanel" aria-labelledby="booking-step3-tab">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-lg-5">
-                            <div class="booking-card-dark">
+                            <div class="tab-pane fade hostel-residence-booking-step-pane hostel-residence-booking-step3-pane"
+                                id="booking-step3-dark">
                                 <span class="step-label">STEP 3</span>
                                 <h3>Pay 50% and book</h3>
                                 <p>Secure your room by paying 50% of the annual hostel fee.</p>
                             </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="booking-card-light">
-                                <h4>What's next</h4>
-                                <p>Check your student portal for your room allotment letter and reporting dates.</p>
-                                <button class="btn btn-next-step" onclick="goToNextBookingStep(3)">Next Step</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Step 4 -->
-                <div class="tab-pane fade" id="booking-step4" role="tabpanel" aria-labelledby="booking-step4-tab">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-lg-5">
-                            <div class="booking-card-dark">
+                            <div class="tab-pane fade hostel-residence-booking-step-pane hostel-residence-booking-step4-pane"
+                                id="booking-step4-dark">
                                 <span class="step-label">STEP 4</span>
                                 <h3>Get your allotment</h3>
                                 <p>Check your student portal for your room allotment letter and reporting dates.</p>
                             </div>
                         </div>
-                        <div class="col-lg-5">
-                            <div class="booking-card-light">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hostel-residence-booking-card-light">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active hostel-residence-booking-step-pane hostel-residence-booking-step1-pane"
+                                id="booking-step1-light">
+                                <h4>What's next</h4>
+                                <p>AC or not, attached or common washroom, how many people you want to share with.</p>
+                                <button class="btn hostel-residence-btn-next-step" onclick="goToNextBookingStep(1)">Next
+                                    Step</button>
+                            </div>
+                            <div class="tab-pane fade hostel-residence-booking-step-pane hostel-residence-booking-step2-pane"
+                                id="booking-step2-light">
+                                <h4>What's next</h4>
+                                <p>Secure your room by paying 50% of the annual hostel fee.</p>
+                                <button class="btn hostel-residence-btn-next-step" onclick="goToNextBookingStep(2)">Next
+                                    Step</button>
+                            </div>
+                            <div class="tab-pane fade hostel-residence-booking-step-pane hostel-residence-booking-step3-pane"
+                                id="booking-step3-light">
+                                <h4>What's next</h4>
+                                <p>Check your student portal for your room allotment letter and reporting dates.</p>
+                                <button class="btn hostel-residence-btn-next-step" onclick="goToNextBookingStep(3)">Next
+                                    Step</button>
+                            </div>
+                            <div class="tab-pane fade hostel-residence-booking-step-pane hostel-residence-booking-step4-pane"
+                                id="booking-step4-light">
                                 <h4>What's next</h4>
                                 <p>You're all set! We look forward to welcoming you to the hostel.</p>
                             </div>
@@ -954,7 +1337,103 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
+
+    <section class="hostel-residence-cta-section">
+        <div class="hostel-residence-cta-card">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h2>Found a room that works?</h2>
+                        <p>Hostel rooms are allotted first come, first served, and the blocks in the ₹90,000 to
+                            ₹1,20,000 range fill first. Applications for 2026-27 close on 31 July 2026.</p>
+                    </div>
+                    <div class="col-lg-5 text-lg-end text-center mt-4 mt-lg-0">
+                        <div class="hostel-residence-cta-buttons">
+                            <a href="#" class="btn hostel-residence-btn-cta-primary">Apply for admission</a>
+                            <a href="#" class="btn hostel-residence-btn-cta-outline">Talk to admission counsellor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="hostel-residence-faq-section w-100">
+        <div class="container">
+            <!-- Header -->
+            <div class="text-start mb-5">
+                <p class="hostel-residence-faq-subtitle">FAQs</p>
+                <h2 class="hostel-residence-faq-title">
+                    <span class="hostel-residence-faq-gradient">Questions students and parents ask</span>
+                </h2>
+            </div>
+
+            <!-- FAQ List -->
+            <div class="hostel-residence-faq-list">
+                <!-- FAQ Item 1 -->
+                <details class="hostel-residence-faq-details" open>
+                    <summary class="hostel-residence-faq-summary">
+                        How much does a Parul University hostel cost per year?
+                    </summary>
+                    <div class="hostel-residence-faq-details-content">
+                        <p>Annual hostel fees for 2026-27 range from ₹79,000 to ₹3,50,000. A non AC bed in a shared room with a common washroom starts at ₹79,000. An AC single occupancy room in Ratan Tata Bhawan C, reserved for PG medical students, is the highest at ₹3,50,000. Most rooms fall between ₹1,00,000 and ₹1,50,000.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="hostel-residence-faq-details">
+                    <summary class="hostel-residence-faq-summary">
+                        What is the difference between an attached and a common washroom?
+                    </summary>
+                    <div class="hostel-residence-faq-details-content">
+                        <p>Attached washrooms are en-suite within your room and shared only with your roommates. Common washrooms are shared among residents on the same floor and are cleaned multiple times daily by our housekeeping staff.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="hostel-residence-faq-details">
+                    <summary class="hostel-residence-faq-summary">
+                        How much more does an AC room cost?
+                    </summary>
+                    <div class="hostel-residence-faq-details-content">
+                        <p>On average, upgrading from a non-AC to an AC room adds approximately ₹20,000 to ₹30,000 to your annual fee, depending on the occupancy level and hostel building.</p>
+                    </div>
+                </details>
+                
+                <!-- FAQ Item 4 - Hidden by default -->
+                <details class="hostel-residence-faq-details faq-hidden-item d-none">
+                    <summary class="hostel-residence-faq-summary">
+                        Is laundry service included in the fee?
+                    </summary>
+                    <div class="hostel-residence-faq-details-content">
+                        <p>Yes, basic laundry service is included in the annual hostel fee for most standard accommodations.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 5 - Hidden by default -->
+                <details class="hostel-residence-faq-details faq-hidden-item d-none">
+                    <summary class="hostel-residence-faq-summary">
+                        Can I change my room later?
+                    </summary>
+                    <div class="hostel-residence-faq-details-content">
+                        <p>Room change requests are subject to availability and typically processed at the beginning of the next semester.</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- View More Button -->
+            <div class="text-left mt-4">
+                <button id="faq-view-more-btn" class="btn hostel-residence-btn-dark">
+                    View more &darr;
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
