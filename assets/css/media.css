@@ -1,0 +1,557 @@
+@media screen and (max-width: 360px) {
+
+
+    .hostel-residence-hero {
+        background-image: url('../images/hostel-residence-hero/hostel-residence-background-phone.webp');
+        padding: 100px 0 50px 0;
+        min-height: auto;
+        border-bottom: 0;
+    }
+
+    .hostel-residence-hero .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hostel-residence-hero-content {
+        display: contents;
+    }
+
+    .hostel-residence-badge {
+        display: none;
+    }
+
+    .hostel-residence-title {
+        order: 1;
+        padding: 0 15px;
+        font-size: 42px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .hostel-residence-title br {
+        display: none;
+    }
+
+    .hostel-residence-desc {
+        order: 2;
+        padding: 0 15px;
+        font-size: 15px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .hostel-residence-desc br {
+        display: none;
+    }
+
+    .hostel-residence-hero-image {
+        order: 3;
+        padding: 0 15px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .hostel-residence-hero-image img {
+        content: url('../images/hostel-residence-hero/hostel-residence-campus-life-phone.webp');
+        transform: scale(1);
+        width: 100%;
+    }
+
+    .hostel-residence-actions {
+        order: 4;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .hostel-residence-btn-primary,
+    .hostel-residence-btn-outline {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Stats Section Mobile */
+    .hostel-residence-stats-section {
+        border-top: 8px solid #ffc800;
+        border-bottom: 8px solid #ffc800;
+        padding: 40px 15px;
+    }
+
+    .hostel-residence-stats-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .hostel-residence-stat-divider {
+        display: none;
+    }
+
+    .hostel-residence-stat-item {
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 12px;
+        padding: 20px 15px;
+        text-align: center;
+        display: block;
+    }
+
+    .hostel-residence-stat-item:nth-child(1) {
+        order: 3;
+        grid-column: 1 / 2;
+    }
+
+    .hostel-residence-stat-item:nth-child(3) {
+        order: 1;
+        grid-column: 1 / 3;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .hostel-residence-stat-item:nth-child(3)::before {
+        content: url('../images/hostel-residence-stats/hostel-residence-laurel-left.svg');
+        position: absolute;
+        left: 0;
+        width: 35px;
+    }
+
+    .hostel-residence-stat-item:nth-child(3)::after {
+        content: url('../images/hostel-residence-stats/hostel-residence-laurel-right.svg');
+        position: absolute;
+        right: 0;
+        width: 35px;
+    }
+
+    .hostel-residence-stat-item:nth-child(3) .hostel-residence-stat-text {
+        text-align: left;
+    }
+
+    .hostel-residence-stat-item:nth-child(5) {
+        order: 2;
+        grid-column: 1 / 3;
+        padding: 20px 10px;
+    }
+
+    .hostel-residence-stat-item:nth-child(5) .hostel-residence-stat-text br {
+        display: none;
+    }
+
+    .hostel-residence-stat-item:nth-child(7) {
+        order: 4;
+        grid-column: 2 / 3;
+    }
+
+    .hostel-residence-stat-item:nth-child(1)>div,
+    .hostel-residence-stat-item:nth-child(5)>div,
+    .hostel-residence-stat-item:nth-child(7)>div {
+        display: inline;
+    }
+
+    .hostel-residence-stat-item:nth-child(1) .hostel-residence-stat-number,
+    .hostel-residence-stat-item:nth-child(5) .hostel-residence-stat-number,
+    .hostel-residence-stat-item:nth-child(7) .hostel-residence-stat-number {
+        font-size: 15px;
+        color: #ffffff;
+        font-family: var(--font-figtree-bold);
+        margin-right: 4px;
+    }
+
+    .hostel-residence-stat-item:nth-child(1) .hostel-residence-stat-text,
+    .hostel-residence-stat-item:nth-child(5) .hostel-residence-stat-text,
+    .hostel-residence-stat-item:nth-child(7) .hostel-residence-stat-text {
+        font-size: 15px;
+        color: #ffffff;
+        font-family: var(--font-figtree-bold);
+    }
+
+    /* Filters Section Mobile */
+    .hostel-residence-filters-title {
+        font-size: 32px;
+    }
+
+    .hostel-residence-filter-options .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hostel-residence-filter-options .col-md-3 {
+        width: 100%;
+        margin-bottom: 25px !important;
+    }
+
+    .hostel-residence-filter-options .col-md-3:nth-child(1) {
+        order: 1;
+    }
+
+    .hostel-residence-filter-options .col-md-3:nth-child(2) {
+        order: 2;
+    }
+
+    .hostel-residence-filter-options .col-md-3:nth-child(3) {
+        order: 4;
+    }
+
+    .hostel-residence-filter-options .col-md-3:nth-child(4) {
+        order: 3;
+    }
+
+    .hostel-residence-budget-labels {
+        font-size: 10px;
+    }
+
+    .hostel-residence-filter-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .hostel-residence-clear-filters {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .hostel-residence-radio-mark {
+        flex-shrink: 0;
+    }
+
+    .hostel-residence-radio {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #load-more-container {
+        text-align: center;
+    }
+
+    /* Amenities Section Mobile */
+    .hostel-residence-amenities-section {
+        padding: 40px 0;
+    }
+
+    .hostel-residence-amenities-title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .hostel-residence-amenities-title br {
+        display: none;
+    }
+
+    .hostel-residence-amenities-title strong {
+        font-size: 36px;
+    }
+
+    .hostel-residence-amenities-desc {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .hostel-residence-amenities-tabs {
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+
+    .hostel-residence-amenities-tabs .btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .hostel-residence-amenities-subtitle {
+        font-size: 24px;
+    }
+
+    .hostel-residence-amenities-subdesc {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .hostel-residence-amenity-content h4 {
+        font-size: 20px;
+    }
+
+    .hostel-residence-feature-card {
+        padding: 24px 20px;
+        margin-bottom: 24px;
+    }
+
+    .hostel-residence-feature-left {
+        padding-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .hostel-residence-feature-left h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .hostel-residence-feature-left p {
+        font-size: 15px;
+    }
+
+    .hostel-residence-feature-list-card {
+        padding: 24px 15px;
+    }
+
+    .hostel-residence-feature-list li {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .hostel-residence-amenities-note {
+        font-size: 13px;
+    }
+
+    .hostel-residence-amenities-title-start {
+        font-size: 1.3rem;
+    }
+
+    .hostel-residence-filter-card {
+        padding: 22px;
+    }
+
+    /* Global Living Section Mobile */
+    .hostel-residence-global-living-experience-section {
+        padding: 40px 0;
+    }
+
+    .hostel-residence-global-living-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .hostel-residence-global-living-subtitle {
+        font-size: 15px;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    .hostel-residence-global-living-tabs {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hostel-residence-global-living-tab,
+    .nav-pills .nav-link.hostel-residence-global-living-tab,
+    .nav-pills .nav-link.hostel-residence-global-living-tab.active,
+    .nav-pills .show>.nav-link.hostel-residence-global-living-tab {
+        width: auto !important;
+        font-size: 12px;
+        padding: 10px 16px;
+        justify-content: center;
+        flex: 1 1 calc(50% - 10px);
+        text-align: center;
+    }
+
+    /* .hostel-residence-global-living-tab-icon {
+        display: none !important;
+    } */
+
+    .hostel-residence-global-living-tabs #gl-tab-3 {
+        order: 1;
+    }
+
+    .hostel-residence-global-living-tabs #gl-tab-2 {
+        order: 2;
+    }
+
+    .hostel-residence-global-living-tabs #gl-tab-4 {
+        order: 3;
+    }
+
+    .hostel-residence-global-living-tabs #gl-tab-1 {
+        order: 4;
+    }
+
+    .hostel-residence-global-living-track img {
+        height: 160px;
+    }
+
+    .hostel-residence-global-living-track {
+        gap: 13px;
+    }
+
+    /* Security Section Mobile */
+    .hostel-residence-security-section {
+        padding: 50px 0 40px 0;
+    }
+
+    .hostel-security-title {
+        font-size: 33px;
+        margin-bottom: 15px;
+    }
+
+    .hostel-security-subtitle {
+        font-size: 15px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .hostel-security-card-inner {
+        padding: 24px;
+    }
+
+    .hostel-security-card-inner h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .hostel-security-card-inner p {
+        font-size: 15px;
+    }
+
+    /* Booking Section Mobile */
+    .hostel-residence-booking-section {
+        padding: 40px 0;
+    }
+
+    .hostel-residence-booking-header {
+        margin-bottom: 30px;
+    }
+
+    .hostel-residence-booking-header h2 {
+        font-size: 38px;
+    }
+
+    .hostel-residence-booking-header p {
+        font-size: 15px;
+    }
+
+    .hostel-residence-booking-tab-icon {
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 0 4px #ffffff;
+        margin-bottom: 8px;
+    }
+
+    .hostel-residence-booking-tab-icon img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .hostel-residence-booking-timeline-line {
+        top: 20px;
+    }
+
+    .hostel-residence-booking-tab-text {
+        font-size: 11px;
+        white-space: normal;
+        max-width: 65px;
+        line-height: 1.2;
+    }
+
+    .hostel-residence-booking-content {
+        margin-top: 20px;
+    }
+
+    .hostel-residence-booking-card-dark,
+    .hostel-residence-booking-card-light {
+        padding: 24px;
+    }
+
+    .hostel-residence-booking-card-dark h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .hostel-residence-booking-card-light h4 {
+        font-size: 20px;
+    }
+
+    .hostel-residence-booking-card-dark p,
+    .hostel-residence-booking-card-light p {
+        font-size: 15px;
+    }
+
+    .hostel-residence-booking-timeline-wrapper {
+        margin: 0 auto 30px;
+    }
+
+    /* CTA Section Mobile */
+    .hostel-residence-cta-card {
+        padding: 50px 0px;
+    }
+
+    .hostel-residence-cta-card h2 {
+        font-size: 35px;
+        line-height: 1.1;
+        margin-bottom: 25px;
+    }
+
+    .hostel-residence-cta-card p {
+        font-size: 14px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .hostel-residence-cta-buttons {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .hostel-residence-btn-cta-primary,
+    .hostel-residence-btn-cta-outline {
+        font-size: 19px;
+        padding: 19px 20px;
+        width: 100%;
+        max-width: 100%;
+        white-space: normal;
+        line-height: 1.2;
+    }
+
+    .hostel-residence-cta-card::before {
+        content: '';
+        position: absolute;
+        top: 20%;
+        right: 0;
+        transform: translate(20%, -50%);
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, #362A74 0%, rgba(102, 79, 218, 0.25) 100%);
+        border-radius: 50%;
+        z-index: 1;
+        transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        opacity: 0.5;
+    }
+
+    /* FAQ Section Mobile */
+    .desktop-faq-title {
+        display: none !important;
+    }
+
+    .mobile-faq-title {
+        display: block !important;
+    }
+
+    .hostel-residence-faq-section {
+        padding: 40px 0;
+    }
+
+    .hostel-residence-faq-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    .hostel-residence-faq-title {
+        font-size: 2rem;
+    }
+    
+    .hostel-residence-faq-title .hostel-residence-faq-gradient {
+        font-size: 2.2rem;
+    }
+}

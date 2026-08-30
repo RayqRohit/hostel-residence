@@ -1072,6 +1072,8 @@ img {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
 }
 
 .hostel-residence-global-living-row {
@@ -1620,6 +1622,10 @@ img {
     line-height: 1.1;
 }
 
+.mobile-faq-title {
+    display: none;
+}
+
 .hostel-residence-faq-title .hostel-residence-faq-gradient {
     font-family: var(--font-polymath-bold);
     font-weight: 700;
@@ -1724,3 +1730,4 @@ img {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
+
