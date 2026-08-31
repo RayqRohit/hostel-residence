@@ -426,3 +426,24 @@ function goToNextBookingStep(currentStepIndex) {
         updateBookingProgress(percentages[currentStepIndex]);
     }
 }
+
+// Global Living Experience - Mobile Scroll to Images
+document.addEventListener('DOMContentLoaded', function() {
+    const globalLivingTabs = document.querySelectorAll('.hostel-residence-global-living-tab');
+    if (globalLivingTabs.length > 0) {
+        globalLivingTabs.forEach(tab => {
+            tab.addEventListener('shown.bs.tab', function (e) {
+                if (window.innerWidth <= 991) {
+                    const tabContent = document.getElementById('global-living-tabContent');
+                    if (tabContent) {
+                        const offset = tabContent.getBoundingClientRect().top + window.scrollY - 100;
+                        window.scrollTo({
+                            top: offset,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    }
+});
