@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const roomCards = document.querySelectorAll('.hostel-residence-room-card');
     const loadMoreBtn = document.getElementById('load-more-btn');
     const loadMoreContainer = document.getElementById('load-more-container');
-    const initialCardsToShow = 9;
+    const initialCardsToShow = window.innerWidth <= 992 ? 8 : 9;
     let currentLimit = initialCardsToShow;
     let currentMatchedCards = Array.from(roomCards);
 

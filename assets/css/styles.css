@@ -97,7 +97,7 @@ img {
 
 .hostel-residence-desc {
     font-family: var(--font-figtree-regular);
-    font-size: 18px;
+    font-size: 23px;
     line-height: 1.6;
     color: #333333;
     margin-bottom: 40px;
@@ -119,8 +119,8 @@ img {
     background-color: #ffc800;
     color: #1b1142;
     font-family: var(--font-figtree-bold);
-    font-size: 16px;
-    padding: 12px 32px;
+    font-size: 20px;
+    padding: 19px 32px;
     border-radius: 30px;
     border: none;
     transition: all 0.3s ease;
@@ -147,8 +147,8 @@ img {
     background-color: transparent;
     color: #1b1142;
     font-family: var(--font-figtree-bold);
-    font-size: 16px;
-    padding: 12px 32px;
+    font-size: 20px;
+    padding: 19px 32px;
     border-radius: 30px;
     border: 2px solid #1b1142;
     transition: all 0.3s ease;
