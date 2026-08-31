@@ -121,7 +121,7 @@ img {
     font-family: var(--font-figtree-bold);
     font-size: 20px;
     padding: 19px 32px;
-    border-radius: 30px;
+    border-radius: 50px;
     border: none;
     transition: all 0.3s ease;
 }
@@ -149,7 +149,7 @@ img {
     font-family: var(--font-figtree-bold);
     font-size: 20px;
     padding: 19px 32px;
-    border-radius: 30px;
+    border-radius: 50px;
     border: 2px solid #1b1142;
     transition: all 0.3s ease;
 }
